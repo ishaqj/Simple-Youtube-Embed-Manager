@@ -6,8 +6,8 @@ Easy way to embed youtube videos in your site. All you have to do is just insert
 Installation Instructions
 =========================
 Notice:
-You need to have Cform and Cdatabase installed in order to use this module.
-
+You need to have CForm and CDatabase installed in order to use this module.
+ver
 - First you need to have a copy of [Anax-MVC][1].
 - Drag and drop the files to your Anax-copy.
 - Make new frontcontroller and insert the lines: 
@@ -36,8 +36,6 @@ $app->router->add('', function() use ($app) {
 $app->router->add('setup', function() use ($app) {
 
     $app->theme->setTitle("Setup Videos");
-
-    //$app->db->setVerbose();
  
     $app->db->dropTableIfExists('youtube')->execute();
  
@@ -93,11 +91,4 @@ DEMO
 =========================
 
 http://www.student.bth.se/~isjc13/phpmvc/kmom05/webroot/youtube.php/youtube/videos
-
-
-
-
-
-
-
 [1]:https://github.com/mosbth/Anax-MVC
