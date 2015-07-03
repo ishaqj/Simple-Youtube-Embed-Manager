@@ -9,7 +9,7 @@ Notice:
 You need to have CForm and CDatabase installed in order to use this module.
 - First you need to have a copy of [Anax-MVC][1].
 - Drag and drop the files to your Anax-copy.
-- Make new frontcontroller and insert the lines: 
+- Make new frontcontroller in webroot folder and insert the lines: 
 
 ```php
 $di->set('YoutubeController', function() use ($di) {
