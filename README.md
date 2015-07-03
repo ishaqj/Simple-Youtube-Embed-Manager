@@ -7,7 +7,6 @@ Installation Instructions
 =========================
 Notice:
 You need to have CForm and CDatabase installed in order to use this module.
-ver
 - First you need to have a copy of [Anax-MVC][1].
 - Drag and drop the files to your Anax-copy.
 - Make new frontcontroller and insert the lines: 
