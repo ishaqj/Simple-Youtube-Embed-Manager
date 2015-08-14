@@ -8,7 +8,7 @@ Installation Instructions
 Notice:
 You need to have CForm and CDatabase installed in order to use this module.
 - First you need to have a copy of [Anax-MVC][1].
-- Drag and drop "app" folder to your Anax-copy.
+- Drag and drop "app" and "src" folder to your Anax-copy.
 - Make new frontcontroller in webroot folder and insert the lines: 
 
 ```php
