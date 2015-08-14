@@ -1,0 +1,23 @@
+{
+    "name": "ishaq/simple-youtube-embed-manager",    
+    "type": "library",
+    "description": "Easy way to integrate youtube videos in your site",
+    "keywords": ["mvc", "Youtube", "embed", "manager", "anax", "anax-mvc", "education"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ishaq Jound",
+            "email": "ishaq_jound@hotmail.com",
+            "homepage": "http://dbwebb.se",
+            "role": "Developer, Student"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Ishaq\\": "app/src/" }
+    }
+
+}
