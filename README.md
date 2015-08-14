@@ -28,15 +28,9 @@ $di->set('YoutubeController', function() use ($di) {
     return $controller;
 });
 
-// Create services and inject into the app. 
-$di = new \Anax\DI\CDIFactoryDefault();
-
-$di->setShared('db', function() {
-    $db = new \Mos\Database\CDatabaseBasic();
-    $db->setOptions(require ANAX_APP_PATH . 'config/config_mysql.php');
-    $db->connect();
-    return $db;
-});
+$app = new \Anax\Kernel\CAnax($di);
+$di->set('form', '\Mos\HTMLForm\CForm');
+$app->session;
 
 
 // Get theme
