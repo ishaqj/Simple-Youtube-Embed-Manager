@@ -33,7 +33,7 @@ $di->set('form', '\Mos\HTMLForm\CForm');
 $app->session;
 
 
-// Get theme
+// Get navbar
 $app->navbar->configure(ANAX_APP_PATH . 'config/navbar_youtube.php');
 
 // Routes
