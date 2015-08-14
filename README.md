@@ -12,11 +12,32 @@ You need to have CForm and CDatabase installed in order to use this module.
 - Make new frontcontroller in webroot folder and insert the lines: 
 
 ```php
+// Create services and inject into the app. 
+$di = new \Anax\DI\CDIFactoryDefault();
+
+$di->setShared('db', function() {
+    $db = new \Mos\Database\CDatabaseBasic();
+    $db->setOptions(require ANAX_APP_PATH . 'config/config_mysql.php');
+    $db->connect();
+    return $db;
+});
+
 $di->set('YoutubeController', function() use ($di) {
     $controller = new \Ishaq\Youtube\YoutubeController();
     $controller->setDI($di);
     return $controller;
 });
+
+// Create services and inject into the app. 
+$di = new \Anax\DI\CDIFactoryDefault();
+
+$di->setShared('db', function() {
+    $db = new \Mos\Database\CDatabaseBasic();
+    $db->setOptions(require ANAX_APP_PATH . 'config/config_mysql.php');
+    $db->connect();
+    return $db;
+});
+
 
 // Get theme
 $app->navbar->configure(ANAX_APP_PATH . 'config/navbar_youtube.php');
